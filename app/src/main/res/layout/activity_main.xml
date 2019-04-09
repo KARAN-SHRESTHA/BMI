@@ -116,7 +116,6 @@
             android:layout_height="wrap_content"
             android:text="Your Status:   "
             android:textSize="30dp"
-
             />
 
         <TextView
