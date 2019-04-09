@@ -70,6 +70,7 @@
             android:layout_height="wrap_content"
             android:text="Calculate BMI"
             android:textSize="30dp"
+            android:id="@+id/btnCalculate"
             />
 
 
