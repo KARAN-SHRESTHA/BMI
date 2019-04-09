@@ -30,10 +30,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                float Height = Integer.parseInt(etHeight.getText().toString());
-                float Weight = Integer.parseInt(etWeight.getText().toString());
+                float Height = Float.parseFloat(etHeight.getText().toString());
+                float Weight = Float.parseFloat(etWeight.getText().toString());
 
                 Calculate c = new Calculate();
+                c.setHeight(Height);
+                c.setWeight(Weight);
+
+                float BMI = c.BMI_Calc();
+                tvBMI.setText(Float.toString(BMI));
 
 
             }
